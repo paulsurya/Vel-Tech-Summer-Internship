@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Vel<span>Tech</span> University</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/students">Students</a></li>
+            <li><a href="/about" class="active">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>About the <span>Project</span></h1>
+        <p>A modern student registration system built with Flask, HTML, and CSS</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Project Overview</h2>
+        <p class="section-subtitle">What this system does and why it was built</p>
+        <div class="card" style="max-width: 100%;">
+            <p style="line-height: 1.8; font-size: 15px;">
+                The Student Registration System is a web-based application developed as part of the
+                InnoTrack 2025 internship program at Vel Tech University. It allows administrative
+                staff to register new students, view existing records, and manage student information
+                across all departments efficiently. The system is built using Flask for backend routing,
+                Jinja2 for template rendering, and custom HTML/CSS for a professional frontend interface.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Features</h2>
+        <p class="section-subtitle">What the system currently supports</p>
+        <div class="cards">
+            <div class="card">
+                <h3>📋 Student Registration</h3>
+                <p>Register new students with name, roll number, department, year, email, phone, gender, and address.
+                </p>
+            </div>
+            <div class="card">
+                <h3>📊 Records Table</h3>
+                <p>View all registered students in a clean, sortable table with department badges and year info.</p>
+            </div>
+            <div class="card">
+                <h3>🎨 Professional UI</h3>
+                <p>Fully responsive design with a consistent color theme, hover effects, and styled components.</p>
+            </div>
+            <div class="card">
+                <h3>🔗 Flask Routing</h3>
+                <p>Clean URL routing using Flask with render_template for all four pages of the application.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Team Information</h2>
+        <p class="section-subtitle">Built during InnoTrack 2025 internship program</p>
+        <div class="cards">
+            <div class="card">
+                <h3>👨‍💻 Developer</h3>
+                <p>Paul Surya P<br>B.Tech AI&DS<br>Vel Tech University</p>
+            </div>
+            <div class="card">
+                <h3>🎓 Program</h3>
+                <p>InnoTrack 2025<br>Track 2 — Stock Market Classifier<br>M3 Flask Integration</p>
+            </div>
+            <div class="card">
+                <h3>👨‍🏫 Mentor</h3>
+                <p>Akhil<br>InnoTrack Technical Mentor<br>Vel Tech University</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 <span>Vel Tech University</span> · Student Registration System · All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
